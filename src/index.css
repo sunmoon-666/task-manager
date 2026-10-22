@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f2f4f8;
+  color: #1f2937;
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+.card {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+h1 { margin: 0 0 20px; font-size: 22px; }
+.add-row { display: flex; gap: 8px; margin-bottom: 16px; }
+.title-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover { opacity: 0.9; }
+button.primary { background: #2563eb; color: #fff; }
+button.danger { background: #fee2e2; color: #b91c1c; }
+.filters { display: flex; gap: 8px; margin-bottom: 16px; }
+.filter { background: #f3f4f6; }
+.filter.active { background: #2563eb; color: #fff; }
+.task-list { list-style: none; padding: 0; margin: 0; }
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.task-main { display: flex; align-items: center; gap: 10px; }
+.task-actions { display: flex; gap: 6px; }
+.task-title { font-size: 15px; }
+.task.done .task-title { text-decoration: line-through; color: #9ca3af; }
+.tag {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.p-高 { background: #fee2e2; color: #b91c1c; }
+.p-中 { background: #fef3c7; color: #b45309; }
+.p-低 { background: #d1fae5; color: #047857; }
+.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.muted { color: #9ca3af; font-size: 14px; text-align: center; padding: 16px 0; }
